@@ -1,0 +1,18 @@
+{
+  "name": "mapbox-gl-js-test",
+  "version": "0.0.0",
+  "description": "A test of mapboxGL browserifyability",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^10.2.3",
+    "mapbox-gl": "^0.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "budo main.js --serve=dist/bundle.js --live | bistre",
+    "build": "browserify main.js > dist/bundle.js"
+  },
+  "author": "Victor Powell <vicapow@gmail.com>",
+  "license": "ISC"
+}
